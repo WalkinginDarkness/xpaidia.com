@@ -1,5 +1,9 @@
+---
+categories:
+  - Notes
+---
 ## 2007 关于游戏开发的How and Why
-
+ <!--more--> 
 
 
 
