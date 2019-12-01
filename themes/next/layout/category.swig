@@ -5,7 +5,17 @@
 {% block title %}{{ __('title.category') }}: {{ page.category }} | {{ title }}{% endblock %}
 
 {% block content %}
-
+{# 
+is_post: {{ is_post() }} <br>
+is_page: {{ is_page() }} <br>
+is_CATEGORY: {{ is_category() }}
+is_CATEGORY_Notes: {{ is_category('Notes') }}
+{{ page.category }}
+{{ list_categories(post.categories, {
+  class: 'cat'
+}) }}
+#}
+              
   {######################}
   {### CATEGORY BLOCK ###}
   {######################}

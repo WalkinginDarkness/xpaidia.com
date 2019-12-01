@@ -4,6 +4,8 @@ categories:
   - articles
 date: 2019-11-20 14:25:40
 tags:
+photos:
+link: "http://www.baidu.com"
 ---
 可以在 `_posts` 目录下，建立一些文件夹，比如 articles、games 等等，后面这些文件夹就会反应成页面上的目录结构。 
 

@@ -20,6 +20,22 @@
     {{ partial('_partials/widgets.swig', {}, {cache: theme.cache.enable}) }}
 
     <main class="main">
+{#
+              is_home: {{ is_home() }} <br>
+              is_current: {{ is_current() }} <br>
+              is_post: {{ is_post() }} <br>
+              is_page: {{ is_page() }} <br>
+              is_category: {{ is_category() }}
+              {%- if is_category() %}
+                {%- for p in page %}
+                 {{ p }} p 
+                {%- endfor %}
+                {{ page.category }} <- page
+              {%- endif %}
+              {{ list_categories(post.categories, {
+                class: 'cat'
+              }) }}
+#}
       <div class="main-inner">
         <div class="content-wrap">
           {% include '_partials/header/sub-menu.swig' %}

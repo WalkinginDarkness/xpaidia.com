@@ -42,7 +42,8 @@
               {{ _p('counter.categories', site.categories.length) }}
             </div>
             <div class="category-all">
-              {{ list_categories() }}
+              {# 类别分类 #}
+              {{ list_categories({class: 'category'}) }}
             </div>
           </div>
         {% elif page.type === 'schedule' %}
